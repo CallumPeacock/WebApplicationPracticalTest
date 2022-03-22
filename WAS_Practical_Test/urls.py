@@ -19,7 +19,7 @@ from django.urls import include
 from GAcourses import views, urls
 
 urlpatterns = [
-    path('course/', views.course, name='course'),
+    path('', views.course, name='course'),
     path('GAcourses/', include('GAcourses.urls')),
     path('admin/', admin.site.urls),
 ]
